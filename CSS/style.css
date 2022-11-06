@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+header {
+    background-color: #D3BAC9;
+}
+header ul {
+    padding: 60px;
+    float: right;
+    color: #FCF9E2;
+
+}
+header li {
+    display: inline-block;
+}
+header p {
+    display: inline-block;
+}
+.heroImg {
+    background-color:#FCF9E2;
+    padding: 100px 20px;
+}
+.content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #D3BAC9;
+    text-align: center;
+    font-size: 18px;
+}
+.button {
+    background-color: #FCF9E2;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+/* My UX Skills Section */
+.skills {
+    background-color: #D3BAC9;
+}
+.flexContainer {
+    display: flex;
+    padding:0%;
+}
+
+.flexContainer div {
+    padding: 20px;
+}
+/* My Work Section */
+.myWork {
+    grid-area:auto;
+    background-color:#FCF9E2;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas:
+    "pathimg workContent1"
+    "volunhereimg workContent2"
+    "mdcimg workContent3"
+}
+.workGrid img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+.pathimg {
+    grid-area: pathimg;
+}
+.volunhereimg {
+    grid-area: volunhereimg;
+}
+.mdcimg {
+    grid-area: mdcimg;
+}
+.workContent1 {
+    grid-area: workContent1;
+}
+.workContent2 {
+    grid-area: workContent2;
+}
+.workContent3 {
+    grid-area: workContent3;
+}
+.footer {
+   background-color: #D3BAC9;
+   padding: 60px;
+}
+footer ul {
+    list-style: none;
+    padding: 5px;
+}
+footer li {
+    display: inline-block;
+    padding: 5px;
+}
+/* .img {
+   max-width: 40%;
+} */
+
+@media only screen and (max-width: 600px) {
+    .flexContainer { 
+        flex-direction: column;
+    }
+    .flexContainer div {
+        width: 100%;
+    }  
+    .workGrid {
+        margin: 0px 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas:
+        "pathimg workContent1"
+        "volunhereimg workContent2"
+        "mdcimg workContent3";
+    }
+}
