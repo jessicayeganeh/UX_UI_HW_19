@@ -36,9 +36,7 @@ header p {
     background-color:#D3BAC9;
     padding: 20px 20px;
     display: flex;
-    grid-template-columns: 30% 70%;
-    grid-template-areas:
-    "content headshot"
+
 }
 .content {
     max-width: 400px;
@@ -51,7 +49,7 @@ header p {
 .content h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
-    text-transform: cap;
+    text-transform: uppercase;
 }
 .button {
     background-color: #FCF9E2;
@@ -68,17 +66,17 @@ header p {
 .skills h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
-    text-transform: cap;
     padding: 50px;
 }
 .flexContainer {
     display: flex;
     padding:0%;
 }
-
 .flexContainer div {
     padding: 20px;
     text-align: center;
+    flex: 1;
+    
 }
 /* My Work Section */
 .myWork {
@@ -89,7 +87,7 @@ header p {
 .myWork h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
-    text-transform: cap;
+    text-transform: uppercase;
 }
 .workGrid {
     display: grid;
@@ -141,25 +139,37 @@ header p {
 /* Let's Connect Section */
 .letsConnect {
     background-color:#FCF9E2;
-    padding: 20px 20px;
+/*   padding: 20px 20px;
     grid-template-columns: 50% 50%;
     grid-template-areas:
-    "socials logoPink"
+    "socials logoPink" */
 }
 .letsConnect h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
-    text-transform: cap;
+    text-transform: uppercase;
     padding: 50px;
 }
+.socials {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "socials logoPink"
+}
+.logoPink {
+    padding: 0px; 
+    justify-content: right; 
+}
 .letsConnect ul {
+    padding: 40px;
     list-style: none;
     padding: 50px left;
 }
 .letsConnect li {
-    display: inline-block;
     padding: 5px;
 }
+
 /* Footer */
 .footer {
    background-color: #D3BAC9;
