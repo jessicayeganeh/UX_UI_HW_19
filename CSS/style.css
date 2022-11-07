@@ -9,7 +9,6 @@ header ul {
     padding: 60px;
     float: right;
     color: #FCF9E2;
-
 }
 header li {
     display: inline-block;
@@ -17,8 +16,20 @@ header li {
 header p {
     display: inline-block;
 }
+#welcome {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    font-size: 30px;
+    margin: 0;
+    color: black;
+    font-weight: lighter;
+    font-family: 'Poppins';
+    background: #FCF9E2;
+    text-align: center;
+ }
 .heroImg {
-    background-color:#FCF9E2;
+    background-color:#D3BAC9;
     padding: 100px 20px;
 }
 .content {
@@ -101,6 +112,7 @@ footer li {
 /* .img {
    max-width: 40%;
 } */
+
 
 @media only screen and (max-width: 600px) {
     .flexContainer { 
