@@ -1,9 +1,12 @@
+html {
+    background-color: #D3BAC9;
+}
 body {
     margin: 0;
     font-family: 'Poppins';
 }
 header {
-    background-color: #D3BAC9;
+    text-transform: uppercase;
 }
 header ul {
     padding: 60px;
@@ -12,25 +15,29 @@ header ul {
 }
 header li {
     display: inline-block;
+    padding: 10px;
 }
 header p {
     display: inline-block;
 }
+/* Animation Section */
 #welcome {
     width: 100%;
-    padding: 20px;
     height: auto;
     font-size: 30px;
     margin: 0;
     color: black;
     font-weight: lighter;
-    font-family: 'Poppins';
     background: #FCF9E2;
     text-align: center;
  }
 .heroImg {
     background-color:#D3BAC9;
-    padding: 100px 20px;
+    padding: 20px 20px;
+    display: flex;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+    "content headshot"
 }
 .content {
     max-width: 400px;
@@ -39,6 +46,11 @@ header p {
     background-color: #D3BAC9;
     text-align: center;
     font-size: 18px;
+}
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    text-transform: cap;
 }
 .button {
     background-color: #FCF9E2;
@@ -49,7 +61,14 @@ header p {
 }
 /* My UX Skills Section */
 .skills {
-    background-color: #D3BAC9;
+    background-color: #FCF9E2;
+    width: 100%
+}
+.skills h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    text-transform: cap;
+    padding: 50px;
 }
 .flexContainer {
     display: flex;
@@ -58,11 +77,18 @@ header p {
 
 .flexContainer div {
     padding: 20px;
+    text-align: center;
 }
 /* My Work Section */
 .myWork {
+    padding: 50px;
     grid-area:auto;
-    background-color:#FCF9E2;
+    background-color:#D3BAC9;
+}
+.myWork h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    text-transform: cap;
 }
 .workGrid {
     display: grid;
@@ -73,6 +99,16 @@ header p {
     "volunhereimg workContent2"
     "mdcimg workContent3"
 }
+.button {
+    background-color: #FCF9E2;
+    border: none;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 .workGrid img {
     width: 100%;
     max-width: 250px;
@@ -97,6 +133,33 @@ header p {
 .workContent3 {
     grid-area: workContent3;
 }
+.viewProject {
+    text-align: center;
+    size: 20px;
+}
+/* Let's Connect Section */
+.letsConnect {
+    background-color:#FCF9E2;
+    padding: 20px 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "socials logoPink"
+}
+.letsConnect h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    text-transform: cap;
+    padding: 50px;
+}
+.letsConnect ul {
+    list-style: none;
+    padding: 50px left;
+}
+.letsConnect li {
+    display: inline-block;
+    padding: 5px;
+}
+/* Footer */
 .footer {
    background-color: #D3BAC9;
    padding: 60px;
